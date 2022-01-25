@@ -11,3 +11,5 @@ Federeated requires that the string_authtype variable is set to "federated", the
 The ./cloudsync_joblength.py script can then be run. It is written for Python 2.7.
 
 The script deals with token refresh (when that is required), creating a new file bearer.token.old and overwriting the bearer.token file. The script will also create a file called running.jobs file and a file called completed.jobs. The completed.jobs file contains the information on job paths (source~target), the running time (in milliseconds), and the number of bytes copied in the job.
+
+This script will only process jobs that it first sees in a RUNNING state during one script execution, and then in a DONE state during a subsequent script execution.
