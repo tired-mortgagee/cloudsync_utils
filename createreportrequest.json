@@ -1,0 +1,12 @@
+{
+  "endpoint": {
+    "protocol": "nfs",
+    "nfs": {
+      "host": "10.128.113.33",
+      "export": "/cloudsync_02",
+      "path": "",
+      "provider":"nfs",
+      "version":"3"
+    }
+  }
+}
